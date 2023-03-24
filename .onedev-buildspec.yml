@@ -24,7 +24,7 @@ jobs:
     name: pull from gitee
     remoteUrl: https://gitee.com/ricky_gu/spring-boot-demo.git
     syncToChildProject: false
-    passwordSecret: github_sync
+    passwordSecret: gitee_sync
     refs: refs/heads/* refs/tags/*
     withLfs: false
     force: false
