@@ -14,7 +14,7 @@ jobs:
     projects: spring-boot-demo
   - !TagCreateTrigger
     projects: spring-boot-demo
-  retryCondition: never
+  retryCondition: '("Log" contains "Failed to run command: git push")'
   maxRetries: 3
   retryDelay: 30
   timeout: 3600
