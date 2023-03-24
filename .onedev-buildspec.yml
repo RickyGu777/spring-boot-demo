@@ -1,14 +1,7 @@
 version: 20
 jobs:
-- name: Push to GitHub
+- name: Push to Gitee
   steps:
-  - !PushRepository
-    name: push
-    remoteUrl: https://github.com/RickyGu777/spring-boot-demo.git
-    passwordSecret: github_sync
-    withLfs: false
-    force: false
-    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
   - !PushRepository
     name: push to gitee
     remoteUrl: https://gitee.com/ricky_gu/spring-boot-demo.git
@@ -25,11 +18,11 @@ jobs:
   maxRetries: 3
   retryDelay: 30
   timeout: 3600
-- name: Pull from GitHub
+- name: Pull from Gitee
   steps:
   - !PullRepository
-    name: pull
-    remoteUrl: https://github.com/RickyGu777/spring-boot-demo.git
+    name: pull from gitee
+    remoteUrl: https://gitee.com/ricky_gu/spring-boot-demo.git
     syncToChildProject: false
     passwordSecret: github_sync
     refs: refs/heads/* refs/tags/*
