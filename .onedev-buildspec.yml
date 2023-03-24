@@ -9,6 +9,13 @@ jobs:
     withLfs: false
     force: false
     condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !PushRepository
+    name: push to gitee
+    remoteUrl: https://gitee.com/ricky_gu/spring-boot-demo.git
+    passwordSecret: gitee_sync
+    withLfs: false
+    force: false
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
   triggers:
   - !BranchUpdateTrigger
     projects: spring-boot-demo
