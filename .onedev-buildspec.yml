@@ -1,1 +1,15 @@
 version: 20
+jobs:
+- name: push-to-github
+  steps:
+  - !PushRepository
+    name: push
+    remoteUrl: https://github.com/RickyGu777/spring-boot-demo.git
+    passwordSecret: github_sync
+    withLfs: false
+    force: false
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 3600
