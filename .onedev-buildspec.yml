@@ -9,6 +9,11 @@ jobs:
     withLfs: false
     force: false
     condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  triggers:
+  - !BranchUpdateTrigger
+    projects: spring-boot-demo
+  - !TagCreateTrigger
+    projects: spring-boot-demo
   retryCondition: never
   maxRetries: 3
   retryDelay: 30
