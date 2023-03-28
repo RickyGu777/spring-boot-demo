@@ -8,7 +8,7 @@ jobs:
     passwordSecret: github_sync
     withLfs: false
     force: false
-    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+    condition: ALWAYS
   triggers:
   - !BranchUpdateTrigger
     projects: spring-boot-demo
