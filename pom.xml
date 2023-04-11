@@ -23,6 +23,7 @@
         <mysql.connector.version>8.0.32</mysql.connector.version>
         <lombok.version>1.18.24</lombok.version>
         <junit.version>5.9.2</junit.version>
+        <hutool.version>5.8.16</hutool.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -54,6 +55,12 @@
                 <version>${lombok.version}</version>
                 <scope>compile</scope>
             </dependency>
+            <!-- hutool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
             <!-- junit -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
@@ -61,7 +68,6 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
@@ -106,6 +112,11 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!-- hutool -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
         </dependency>
     </dependencies>
 
