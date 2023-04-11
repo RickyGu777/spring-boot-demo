@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName("enum_convert_user")
+@TableName("demo_enum_convert_user")
 public class User {
 
     @TableId(type = IdType.AUTO)

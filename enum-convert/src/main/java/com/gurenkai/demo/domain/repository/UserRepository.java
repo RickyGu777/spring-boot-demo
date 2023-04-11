@@ -12,16 +12,17 @@ public class UserRepository {
 
     private final UserMapper userMapper;
 
-    public User find(String account) {
-        return userMapper.selectOne(Wrappers.lambdaQuery(User.class).eq(User::getAccount, account));
+    public User find(Long id) {
+        return userMapper.selectById(id);
     }
 
-    public void add(User user) {
+    public Long add(User user) {
         userMapper.insert(user);
+        return user.getId();
     }
 
-    public void remove(User user) {
-        userMapper.deleteById(user);
+    public void remove(Long id) {
+        userMapper.deleteById(id);
     }
 
 }
