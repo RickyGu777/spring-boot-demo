@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybaits-plus-tablelogic" />
+        <module name="data-scope" />
         <module name="enum-convert" />
       </profile>
     </annotationProcessing>
