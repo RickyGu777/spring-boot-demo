@@ -1,11 +1,8 @@
 package com.gurenkai.demo;
 
 import cn.hutool.http.HttpUtil;
-import cn.hutool.json.JSON;
-import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.gurenkai.demo.infrastructure.enums.VipLevel;
-import com.gurenkai.demo.infrastructure.persistence.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

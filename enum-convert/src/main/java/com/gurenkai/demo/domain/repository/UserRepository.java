@@ -1,6 +1,5 @@
 package com.gurenkai.demo.domain.repository;
 
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.gurenkai.demo.infrastructure.mapper.UserMapper;
 import com.gurenkai.demo.infrastructure.persistence.User;
 import lombok.AllArgsConstructor;
