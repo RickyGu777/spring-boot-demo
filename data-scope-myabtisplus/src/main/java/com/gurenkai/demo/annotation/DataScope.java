@@ -30,4 +30,10 @@ public @interface DataScope {
      * 用户字段
      */
     String userField() default "";
+
+    /**
+     * 是否分页查询
+     */
+    boolean pageable() default false;
+
 }

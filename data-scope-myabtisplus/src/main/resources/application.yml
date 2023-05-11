@@ -17,3 +17,5 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl #开启sql日志
     map-underscore-to-camel-case: true
+  dataScope:
+    oncePolicy: true
