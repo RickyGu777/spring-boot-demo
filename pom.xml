@@ -74,7 +74,7 @@
     <modules>
         <module>mybaits-plus-tablelogic</module>
         <module>enum-convert</module>
-        <module>data-scope</module>
+        <module>data-scope-myabtisplus</module>
     </modules>
     <packaging>pom</packaging>
 
