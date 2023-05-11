@@ -75,8 +75,11 @@ public class DataScopeHandler implements DataPermissionHandler {
      */
     private static final String ADMIN_ROLE_KEY = "admin";
 
-    @Value("${mybatis-plus.dataScope.oncePolicy}")
-    private boolean dataScopeOncePolicy = true;
+    /**
+     * 默认支持单次的数据权限
+     */
+    @Value("${mybatis-plus.dataScope.oncePolicy: true}")
+    private boolean dataScopeOncePolicy;
 
     /**
      * 通过ThreadLocal记录权限相关的属性值
