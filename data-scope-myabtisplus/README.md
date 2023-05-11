@@ -8,6 +8,8 @@
 
 也可以直接调用 `DataScopeSwitch.open()` 或 `DataScopeSwitch.close()` 手动打开或关闭数据权限，也可以使用 `DataScopeSwitch.openOnce()` 开启单次数据权限
 
+注意：若想与若依原来的数据权限共存且互不干扰，只需更改原来的数据权限注解，使得两个数据权限的实现使用不同注解即可。
+
 参考：
 1. [若依-数据权限](http://doc.ruoyi.vip/ruoyi/document/htsc.html#%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90)
 2. [Mybatis-plus数据权限DataPermissionInterceptor实现](https://blog.csdn.net/qq_42445433/article/details/124406475)
