@@ -93,7 +93,8 @@ public class DataScopeHandler implements DataPermissionHandler {
             return where;
         }
         Expression expression = scopeExpression(dataScopeParam);
-        return where == null ? new Parenthesis(expression) : (expression == null ? where : new AndExpression(where, new Parenthesis(expression)));
+        return where == null ? (expression == null ? null : new Parenthesis(expression)) :
+                (expression == null ? where : new AndExpression(where, new Parenthesis(expression)));
     }
 
     @SuppressWarnings("unchecked")
